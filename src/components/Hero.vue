@@ -3,6 +3,7 @@ import { ref, onMounted } from 'vue';
 import { gsap } from 'gsap';
 import { heroVideo, smallHeroVideo } from '../utils';
 
+
 const videoSRC = ref(heroVideo);
 
 const updateVideoSRC = () => {
@@ -22,7 +23,7 @@ onMounted(() => {
   gsap.to('#cta', {
     opacity: 1,
     y: -50,
-    delay: 2.2,
+    delay: 2,
   })
 
   updateVideoSRC();
